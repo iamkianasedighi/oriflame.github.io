@@ -1,0 +1,23 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": " node-sass --watch scss/main.scss --output css/ --recursive",
+    "sassMinify": "node-sass -w scss/main.scss -o css/ --output-style=compressed",
+    "setting": "node-sass -w scss/setting -o css/setting -r --output-style=compressed",
+    "xxl": "node-sass -w scss/xxl -o css/xxl -r --output-style=compressed",
+    "xl": "node-sass -w scss/xl -o css/xl -r --output-style=compressed",
+    "lg": "node-sass -w scss/lg -o css/lg -r --output-style=compressed",
+    "md": "node-sass -w scss/md -o css/md -r --output-style=compressed",
+    "sm": "node-sass -w scss/sm -o css/sm -r --output-style=compressed",
+    "xs": "node-sass -w scss/xs -o css/xs -r --output-style=compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "node-sass": "^9.0.0"
+  }
+}

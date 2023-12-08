@@ -1,0 +1,543 @@
+div.header {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 20;
+  > nav {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 80px;
+    > div {
+      flex: 1 0 0;
+    }
+    > div:nth-of-type(1) {
+      display: flex;
+      flex-flow: row wrap;
+      > span {
+        margin: auto auto;
+        cursor: pointer;
+        > a {
+          text-decoration: none;
+          text-transform: capitalize;
+          font-family: oriSans;
+          font-size: 14px;
+          color: black;
+        }
+      }
+      > div.subMenu {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        border-top: rgba(93, 89, 89, 0.27) 3px solid;
+        width: 100%;
+        height: 590px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        display: none;
+
+        a {
+          font-size: medium;
+          font-weight: lighter;
+          color: gray;
+          text-decoration: none;
+        }
+        a.titleMenu {
+          font-weight: bold;
+          font-size: medium;
+          color: black;
+        }
+        a.mainTitleMenu {
+          font-weight: bolder;
+          font-size: larger;
+          color: black;
+        }
+        > div.subMenuLeft {
+          display: flex;
+          flex-direction: column;
+          width: 260px;
+          border-right: rgba(93, 89, 89, 0.27) 3px solid;
+          > a {
+            text-decoration: none;
+            color: rgb(51, 51, 51);
+            font-size: 17px;
+            line-height: 38px;
+            width: 260px;
+            padding-left: 25px;
+            transform: 300ms;
+          }
+          > a.SMbestOffers {
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(106, 98, 98, 0.466);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                background-color: white;
+                width: calc(100vw - 265px);
+                height: 590px;
+              }
+            }
+          }
+          > a.SMeCatalogue {
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(115, 106, 106, 0.466);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                width: calc(100vw - 265px);
+                height: 590px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                > span:nth-of-type(1) {
+                  margin: auto;
+                  font-size: large;
+                  font-weight: bold;
+                  &:hover {
+                    color: gray;
+                  }
+                }
+                > span:nth-of-type(2) {
+                  margin: auto;
+                  font-size: medium;
+                  color: rgb(92, 90, 90);
+                }
+                > img {
+                  margin: auto;
+                  border-radius: 10px;
+                  width: 310px;
+                  height: 430px;
+                  &:hover {
+                    opacity: 0.7;
+                  }
+                }
+                > span:nth-of-type(3) {
+                  text-decoration: underline;
+                  font-weight: bold;
+                  margin: auto;
+                  &:hover {
+                    color: cadetblue;
+                  }
+                }
+              }
+            }
+          }
+          > a.SMInspiration {
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(106, 98, 98, 0.466);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                background-color: white;
+                width: calc(100vw - 265px);
+                height: 590px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                > div {
+                  margin: auto 10px;
+                  > img {
+                    width: 269px;
+                    height: 269px;
+                    margin: auto;
+                    &:hover {
+                      opacity: 0.7;
+                    }
+                  }
+                  > span {
+                    position: absolute;
+                    color: white;
+                    font-size: xx-large;
+                    font-weight: bolder;
+                  }
+                }
+                > div:nth-of-type(1) {
+                  > span {
+                    color: rgb(255, 255, 255);
+                    font-size: 30px;
+                    font-weight: bold;
+                    left: 25%;
+                    line-height: 4.4rem;
+                    text-align: center;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                  }
+                }
+                > div:nth-of-type(2) {
+                  > span {
+                    color: rgb(255, 255, 255);
+                    font-size: 30px;
+                    font-weight: bold;
+                    left: 50%;
+                    line-height: 4.4rem;
+                    text-align: center;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                  }
+                }
+                > div:nth-of-type(3) {
+                  > span {
+                    color: rgb(255, 255, 255);
+                    font-size: 30px;
+                    font-weight: bold;
+                    left: 75%;
+                    line-height: 4.4rem;
+                    text-align: center;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+          > a.SMSkinCare {
+            border-left: 5px cadetblue solid;
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(95, 158, 160, 0.644);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                width: calc(100vw - 265px);
+                height: 590px;
+                display: flex;
+                flex-direction: row;
+                > div {
+                  > ul {
+                    list-style: none;
+                    margin-bottom: 10px;
+                    > li {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          > a.SMMakeUp {
+            border-left: 5px palevioletred solid;
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(216, 112, 147, 0.582);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                width: calc(100vw - 265px);
+                height: 590px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                > div {
+                  display: flex;
+                  flex-direction: column;
+                }
+              }
+            }
+          }
+          > a.SMFragrance {
+            border-left: 5px rgb(169, 136, 36) solid;
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(169, 136, 36, 0.459);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                width: calc(100vw - 265px);
+                height: 590px;
+              }
+            }
+          }
+          > a.SMBathAndBody {
+            border-left: 5px rgb(70, 70, 171) solid;
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(70, 70, 171, 0.511);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                background-color: white;
+                width: calc(100vw - 265px);
+                height: 590px;
+              }
+            }
+          }
+          > a.SMHair {
+            border-left: 5px rgb(207, 207, 100) solid;
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(207, 207, 100, 0.574);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                background-color: white;
+                width: calc(100vw - 265px);
+                height: 590px;
+              }
+            }
+          }
+          > a.SMAccessories {
+            border-left: 5px rgb(142, 65, 65) solid;
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(142, 65, 65, 0.559);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                background-color: white;
+                width: calc(100vw - 265px);
+                height: 590px;
+              }
+            }
+          }
+          > a.SMWellness {
+            border-left: 5px rgb(122, 72, 169) solid;
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(122, 72, 169, 0.481);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                background-color: white;
+                width: calc(100vw - 265px);
+                height: 590px;
+              }
+            }
+          }
+          > a.SMMen {
+            border-left: 5px rgb(26, 81, 55) solid;
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(26, 81, 55, 0.522);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                background-color: white;
+                width: calc(100vw - 265px);
+                height: 590px;
+              }
+            }
+          }
+          > a.SMKidsAndBabies {
+            border-left: 5px aqua solid;
+            > div {
+              display: none;
+            }
+            &:hover {
+              background-color: rgba(0, 255, 255, 0.497);
+              > div {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                background-color: white;
+                width: calc(100vw - 265px);
+                height: 590px;
+              }
+            }
+          }
+          > a.SMNovelties {
+            &:hover {
+              color: gray;
+            }
+          }
+          > a.SMBeautyRewardsProgramme {
+            line-height: normal;
+            &:hover {
+              color: gray;
+            }
+          }
+        }
+      }
+
+      div.menuLeft {
+        width: 300px;
+        height: calc(100vh - 80px);
+        position: absolute;
+        left: -300px;
+        top: 80px;
+        transition: 300ms;
+        background-color: whitesmoke;
+        > span {
+          text-align: center;
+          display: block;
+          margin-bottom: 10px;
+        }
+        > span.register {
+          font-weight: bolder;
+          margin-bottom: 10px;
+        }
+        > span.VIP {
+          background-color: lightgray;
+          margin-bottom: 10px;
+        }
+        > button {
+          margin: auto auto;
+          margin-left: 45px;
+          text-align: center;
+          width: 70%;
+          border-radius: 20px 20px;
+          color: whitesmoke;
+          margin-bottom: 10px;
+        }
+        > button.fa-facebook {
+          font-size: small;
+          color: black;
+          margin-bottom: 10px;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.493);
+        }
+        > form {
+          margin: auto auto;
+          text-align: center;
+          font-size: 14px;
+          width: 80%;
+          > input {
+            text-align: left;
+            width: 100%;
+            margin-bottom: 10px;
+            border: unset;
+            outline: unset;
+            border-bottom: 1px solid black;
+          }
+        }
+        > span.under {
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+        > h3 {
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      }
+    }
+    > div:nth-of-type(2) {
+      display: flex;
+      > svg {
+        margin: auto auto;
+        width: 135px;
+        > path {
+          fill: #282828 !important;
+          stroke-opacity: 1 !important;
+        }
+      }
+    }
+    > div:nth-of-type(3) {
+      display: flex;
+      column-gap: 15px;
+      > form > input {
+        width: 200px;
+        height: 30px;
+        background-color: rgba(211, 211, 211, 0.397);
+        border-radius: 20px;
+        border: unset;
+        outline: unset;
+        margin: auto 0;
+        margin-left: auto;
+        margin-bottom: 20px;
+      }
+      > div.mainbag {
+        margin: auto auto;
+        display: inline-block;
+        > div.subBag {
+          display: none;
+          > p {
+            display: none;
+          }
+          > button {
+            display: none;
+          }
+        }
+        font-size: 30px;
+        cursor: pointer;
+        &:hover {
+          > div.subBag {
+            width: 300px;
+            height: calc(100vh - 80px);
+            position: absolute;
+            background-color: whitesmoke;
+            right: 0;
+            top: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            > p {
+              font-size: medium;
+              font-weight: bolder;
+              display: block;
+            }
+            > button {
+              color: whitesmoke;
+              border-radius: 50px;
+              margin: 20px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.active {
+  display: block !important;
+}
+.leftActive {
+  left: 0 !important;
+}
+.rightActive {
+  right: 0 !important;
+}

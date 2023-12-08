@@ -1,0 +1,91 @@
+div.new {
+  position: relative;
+  margin-top: 100px !important;
+  > div.titlenew {
+    margin-top: 20px;
+    font-family: oriSans;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    > button.newbtn {
+      font-size: medium;
+      border-radius: 25px;
+      color: black;
+      text-align: center;
+    }
+    > span {
+      font-size: 40px;
+      font-weight: bold;
+      padding-left: 40%;
+    }
+  }
+  > div.sellnew {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    > div.lashesnew {
+      width: 45%;
+      position: relative;
+      > img {
+        border-radius: 5px;
+        width: 100%;
+      }
+      > button.lashesnew {
+        border-radius: 50px;
+        position: absolute;
+        bottom: 0;
+        right: 200px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: whitesmoke;
+      }
+    }
+    > div.itemsnew {
+      width: 54%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      position: relative;
+      > div {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        > img {
+          border-radius: 3px;
+          width: 100%;
+          background-color: grey;
+        }
+        > span.ticket {
+          padding-top: 12px;
+          background-color: blueviolet;
+          border-radius: 100%;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          color: whitesmoke;
+          top: 0;
+          position: absolute;
+        }
+        > span.bagnew {
+          padding-top: 12px;
+          background-color: white;
+          border-radius: 100%;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          position: absolute;
+          bottom: 158px;
+          right: 0;
+        }
+        > div.pricenew {
+          display: flex;
+          flex-direction: row;
+          padding: 5px;
+        }
+    }
+  }
+}

@@ -1,0 +1,1066 @@
+body {
+  > div.header {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 20;
+    > nav {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0 80px;
+      > div {
+        flex: 1 0 0;
+      }
+      > div:nth-of-type(1) {
+        display: flex;
+        flex-flow: row wrap;
+        > span {
+          margin: auto 20px;
+          cursor: pointer;
+          > a {
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: oriSans;
+            font-size: 14px;
+            color: black;
+          }
+        }
+        > span.noneInMd {
+          display: none;
+        }
+        > div.subMenu {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+          border-top: rgba(93, 89, 89, 0.27) 3px solid;
+          height: 590px;
+          background-color: white;
+          position: absolute;
+          left: 0;
+          top: 80px;
+          display: none;
+
+          a {
+            font-size: medium;
+            font-weight: lighter;
+            color: gray;
+            text-decoration: none;
+          }
+          a.titleMenu {
+            font-weight: bold;
+            font-size: medium;
+            color: black;
+          }
+          a.mainTitleMenu {
+            font-weight: bolder;
+            font-size: larger;
+            color: black;
+          }
+          > div.subMenuLeft {
+            display: flex;
+            flex-direction: column;
+            width: 260px;
+            border-right: rgba(93, 89, 89, 0.27) 3px solid;
+            > a {
+              text-decoration: none;
+              color: rgb(51, 51, 51);
+              font-size: 17px;
+              line-height: 38px;
+              width: 260px;
+              padding-left: 25px;
+              transform: 300ms;
+            }
+            > a.SMbestOffers {
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(106, 98, 98, 0.466);
+              }
+            }
+            > a.SMeCatalogue {
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(115, 106, 106, 0.466);
+              }
+            }
+            > a.SMInspiration {
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(106, 98, 98, 0.466);
+              }
+            }
+            > a.SMSkinCare {
+              border-left: 5px cadetblue solid;
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(95, 158, 160, 0.644);
+              }
+            }
+            > a.SMMakeUp {
+              border-left: 5px palevioletred solid;
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(216, 112, 147, 0.582);
+              }
+            }
+            > a.SMFragrance {
+              border-left: 5px rgb(169, 136, 36) solid;
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(169, 136, 36, 0.459);
+              }
+            }
+            > a.SMBathAndBody {
+              border-left: 5px rgb(70, 70, 171) solid;
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(70, 70, 171, 0.511);
+              }
+            }
+            > a.SMHair {
+              border-left: 5px rgb(207, 207, 100) solid;
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(207, 207, 100, 0.574);
+              }
+            }
+            > a.SMAccessories {
+              border-left: 5px rgb(142, 65, 65) solid;
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(142, 65, 65, 0.559);
+              }
+            }
+            > a.SMWellness {
+              border-left: 5px rgb(122, 72, 169) solid;
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(122, 72, 169, 0.481);
+              }
+            }
+            > a.SMMen {
+              border-left: 5px rgb(26, 81, 55) solid;
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(26, 81, 55, 0.522);
+              }
+            }
+            > a.SMKidsAndBabies {
+              border-left: 5px aqua solid;
+              > div {
+                display: none;
+              }
+              &:hover {
+                background-color: rgba(0, 255, 255, 0.497);
+              }
+            }
+            > a.SMNovelties {
+              &:hover {
+                color: gray;
+              }
+            }
+            > a.SMBeautyRewardsProgramme {
+              line-height: normal;
+              &:hover {
+                color: gray;
+              }
+            }
+          }
+        }
+
+        div.menuLeft {
+          width: 300px;
+          height: calc(100vh - 80px);
+          position: absolute;
+          left: -300px;
+          top: 80px;
+          transition: 300ms;
+          background-color: whitesmoke;
+          > span {
+            text-align: center;
+            display: block;
+            margin-bottom: 10px;
+          }
+          > span.register {
+            font-weight: bolder;
+            margin-bottom: 10px;
+          }
+          > span.VIP {
+            background-color: lightgray;
+            margin-bottom: 10px;
+          }
+          > button {
+            margin: auto auto;
+            margin-left: 45px;
+            text-align: center;
+            width: 70%;
+            border-radius: 20px 20px;
+            color: whitesmoke;
+            margin-bottom: 10px;
+          }
+          > button.fa-facebook {
+            font-size: small;
+            color: black;
+            margin-bottom: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.493);
+          }
+          > form {
+            margin: auto auto;
+            text-align: center;
+            font-size: 14px;
+            width: 80%;
+            > input {
+              text-align: left;
+              width: 100%;
+              margin-bottom: 10px;
+              border: unset;
+              outline: unset;
+              border-bottom: 1px solid black;
+            }
+          }
+          > span.under {
+            font-size: 12px;
+            margin-bottom: 10px;
+          }
+          > h3 {
+            margin-bottom: 10px;
+            text-align: center;
+          }
+        }
+      }
+      > div:nth-of-type(2) {
+        display: flex;
+        > svg {
+          margin: auto auto;
+          width: 135px;
+          > path {
+            fill: #282828 !important;
+            stroke-opacity: 1 !important;
+          }
+        }
+      }
+      > div:nth-of-type(3) {
+        display: flex;
+        column-gap: 15px;
+        > form > input {
+          width: 200px;
+          height: 30px;
+          background-color: rgba(211, 211, 211, 0.397);
+          border-radius: 20px;
+          border: unset;
+          outline: unset;
+          margin: auto 0;
+          margin-left: auto;
+          margin-top: 20px;
+        }
+        > div.mainbag {
+          margin: auto auto;
+          display: inline-block;
+          > div.subBag {
+            display: none;
+            > p {
+              display: none;
+            }
+            > button {
+              display: none;
+            }
+          }
+          font-size: 30px;
+          cursor: pointer;
+          &:hover {
+            > div.subBag {
+              width: 300px;
+              height: calc(100vh - 80px);
+              position: absolute;
+              background-color: whitesmoke;
+              right: 0;
+              top: 80px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              > p {
+                font-size: medium;
+                font-weight: bolder;
+                display: block;
+              }
+              > button {
+                color: whitesmoke;
+                border-radius: 50px;
+                margin: 20px;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .active {
+    display: block !important;
+  }
+  .leftActive {
+    left: 0 !important;
+  }
+  .rightActive {
+    right: 0 !important;
+  }
+
+  > div.slider {
+    width: 100%;
+    height: 500px;
+    background-color: lightgrey;
+    position: relative;
+    top: 80px;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    position: relative;
+    > div.content {
+      position: absolute;
+      padding: 20px;
+      right: 100px;
+      top: 50px;
+      width: 30%;
+      > h6 {
+        text-align: center;
+        margin: 0px auto;
+        margin-bottom: 5px;
+      }
+      > h4 {
+        text-align: center;
+        margin: 0px auto;
+        line-height: 25px;
+        margin-bottom: 5px;
+      }
+      > a {
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+        width: fit-content;
+        height: fit-content;
+        background-color: lightgray;
+        color: whitesmoke;
+        text-align: center;
+        text-decoration: none;
+        text-transform: capitalize;
+        line-height: 40px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: black;
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+  > div.menu {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(211, 211, 211, 0.682);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+    position: relative;
+    top: 80px;
+    > a {
+      width: 10%;
+      text-align: center;
+      margin: auto auto;
+      font-size: medium;
+      font-weight: 500;
+      font-size: 15px;
+      text-decoration: none;
+      color: rgb(51, 51, 51);
+    }
+  }
+  > div.new {
+    position: relative;
+    margin-top: 100px !important;
+    > div.titlenew {
+      margin-top: 20px;
+      font-family: oriSans;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      > button.newbtn {
+        font-size: medium;
+        border-radius: 25px;
+        color: black;
+        text-align: center;
+      }
+      > span {
+        font-size: 40px;
+        font-weight: bold;
+        padding-left: 40%;
+      }
+    }
+    > div.sellnew {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: auto;
+      width: 90%;
+      > div.lashesnew {
+        width: 45%;
+        position: relative;
+        > img {
+          border-radius: 5px;
+          width: 100%;
+        }
+        > button.lashesnew {
+          border-radius: 50px;
+          position: absolute;
+          bottom: 10px;
+          right: 100px;
+          padding-left: 25px;
+          padding-right: 25px;
+          color: whitesmoke;
+        }
+      }
+      > div.itemsnew {
+        width: 54%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        > div {
+          width: 32%;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          > img {
+            border-radius: 3px;
+            width: 100%;
+            background-color: grey;
+          }
+          > span.ticket {
+            padding-top: 12px;
+            background-color: blueviolet;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            color: whitesmoke;
+            top: 0;
+            position: absolute;
+          }
+          > span.bagnew {
+            padding-top: 12px;
+            background-color: white;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            position: absolute;
+            bottom: 126px;
+            right: 0;
+          }
+          > div.pricenew {
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+  > div.bestOffer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    > div.backgroundCircleOffer {
+      background-color: rgb(178, 175, 239);
+      width: calc(100vw / 3.5);
+      height: calc(100vw / 3.5);
+      border-radius: 50%;
+      opacity: 0.2;
+      position: absolute;
+      right: -47px;
+      bottom: 300px;
+      z-index: -1;
+      overflow: hidden;
+    }
+    > div.titlebest {
+      font-family: oriSans;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      > button.offerbtn {
+        border-radius: 50px;
+        padding: 10px;
+      }
+      > span {
+        font-size: 40px;
+        font-weight: bold;
+        margin-right: 350px;
+      }
+    }
+    > div.selloffer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      > div.offerlarge {
+        position: relative;
+        top: -60px;
+        > span:nth-of-type(1) {
+          font-size: larger;
+          color: white;
+          font-weight: bolder;
+          position: absolute;
+          bottom: 80px;
+          left: 87px;
+        }
+        > span:nth-of-type(2) {
+          font-size: larger;
+          color: white;
+          font-weight: bolder;
+          position: absolute;
+          bottom: 50px;
+          left: 95px;
+        }
+        > img {
+          border-radius: 5px;
+          position: relative;
+        }
+        > button.bestshopnow {
+          border-radius: 50px;
+          position: absolute;
+          padding-left: 25px;
+          padding-right: 25px;
+          color: whitesmoke;
+          bottom: 10px;
+          left: 80px;
+        }
+      }
+      > div.itemsoffer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        > div {
+          position: relative;
+          width: 24%;
+          display: flex;
+          flex-direction: column;
+          > img {
+            border-radius: 3px;
+            width: 100%;
+            background-color: grey;
+          }
+          > span.bagoffer {
+            padding-top: 12px;
+            background-color: white;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            bottom: 310px;
+          }
+          > div.pricenew {
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+  > div.productAfterOffer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 900px;
+    background-color: rgba(151, 157, 163, 0.526);
+    position: relative;
+    > div:nth-of-type(1) {
+      width: 100%;
+      > img {
+        width: 100%;
+        height: auto;
+      }
+      > h3 {
+        font: oriSans;
+        font-size: 30px;
+        font-weight: bolder;
+        position: absolute;
+        bottom: 80px;
+        width: 100%;
+      }
+    }
+    > div:nth-of-type(2) {
+      width: 100%;
+      margin: auto;
+      margin: auto;
+      > h3 {
+        width: 80%;
+        margin: auto;
+        font: oriSans;
+        font-size: 40px;
+      }
+      > p {
+        width: 80%;
+        font-size: medium;
+        margin: auto;
+      }
+      > button {
+        margin-left: 10%;
+        border-radius: 50px;
+        padding: 10px;
+      }
+    }
+    > div.backgroundCircle {
+      display: none;
+    }
+  }
+  > div.routine {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto !important;
+    width: 95%;
+    > div:nth-of-type(1) {
+      width: 100%;
+      > h3 {
+        font-size: 45px;
+        font-family: oriSans;
+        text-align: center;
+      }
+      > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+          font-weight: lighter;
+          font-family: oriSans;
+          text-align: center;
+          margin: auto;
+          font-size: large;
+          width: 80%;
+        }
+        button {
+          border-radius: 50px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          border: 1px solid black;
+          align-items: center;
+        }
+      }
+    }
+    > div.type2:nth-of-type(2) {
+      margin-top: 15px;
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      > div {
+        width: 18%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        > img {
+          border-radius: 3px;
+          width: 100%;
+          padding-bottom: -10px;
+        }
+        > span {
+          margin-top: -30px;
+          line-height: 17px;
+        }
+        > span:nth-of-type(2) {
+          line-height: 69px;
+        }
+        > span.bagroutine {
+          padding-top: 12px;
+          background-color: white;
+          border-radius: 100%;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          position: relative;
+          left: 0;
+          align-items: center;
+          bottom: 10px;
+        }
+        > div.pricenew {
+          margin-top: -5px;
+          display: flex;
+          flex-direction: row;
+          padding: 5px;
+        }
+      }
+      > div:nth-of-type(1) {
+        width: 40% !important;
+        > img {
+          width: 100%;
+          border-radius: 0px 10px 10px 0px;
+        }
+        > span {
+          color: rgb(249, 247, 247);
+          font-weight: bold;
+          font-size: x-large;
+          font-family: oriSans;
+          position: relative;
+          bottom: 25px;
+          left: 10px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  > div.beautyEdit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    > div:nth-of-type(1) {
+      display: flex;
+      flex-direction: column;
+      > svg {
+        margin: auto;
+      }
+      p {
+        align-items: center;
+        text-align: center;
+        padding-top: 10px;
+        width: 80%;
+        font-size: large;
+        margin: auto;
+      }
+    }
+    > div:nth-of-type(2) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: auto;
+      width: 90%;
+      > div {
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        > img {
+          border-radius: 15px;
+          width: 100%;
+          opacity: 1;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+        > span {
+          text-align: center;
+        }
+        > p:nth-of-type(1) {
+          font-weight: bold;
+          font-size: 15px;
+          text-align: center;
+        }
+        > p:nth-of-type(2) {
+          font-weight: bolder;
+          font-size: 25px;
+          text-align: center;
+          height: 75px;
+        }
+        > button {
+          border: 1px solid black;
+          border-radius: 50px;
+          &:hover {
+            background-color: lightgray;
+          }
+        }
+      }
+    }
+  }
+  > div.viewBeauty {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    > h3 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 50px;
+      font-family: oriSans;
+    }
+    > p {
+      font-weight: lighter;
+      text-align: center;
+      width: 80%;
+      margin: auto;
+    }
+    > hr {
+      width: 10%;
+      height: 5px;
+      color: aquamarine;
+      border-radius: 3px;
+      background-color: rgb(47, 113, 91);
+      margin: auto;
+      margin-top: 10px;
+    }
+  }
+  > div.brands {
+    display: flex;
+    flex-direction: column;
+    > div:nth-of-type(1) {
+      > p {
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        font-family: oriSans;
+      }
+    }
+    > div:nth-of-type(2) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 80%;
+      margin: auto;
+      > a {
+        > img {
+          width: 100%;
+          border-radius: 100%;
+        }
+      }
+    }
+    > button {
+      border: 1px solid black;
+      border-radius: 50px;
+      width: 12%;
+      margin: auto;
+      margin-top: 10px;
+      &:hover {
+        background-color: lightgray;
+      }
+    }
+  }
+  > div.discover {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    > video {
+      padding-bottom: 10px;
+      margin: auto;
+      width: 100%;
+    }
+    > button {
+      border: 1px solid black;
+      width: 20%;
+      border-radius: 50px;
+      margin: auto;
+      &:hover {
+        background-color: lightgray;
+      }
+    }
+  }
+  > div.standard {
+    display: flex;
+    flex-direction: column;
+    > div:nth-of-type(1) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      > p:nth-of-type(1) {
+        font-weight: bolder;
+        font-family: oriSans;
+        font-size: 60px;
+        text-align: center;
+      }
+      > p:nth-of-type(2) {
+        text-align: center;
+        margin: auto;
+        font-size: medium;
+        width: 80%;
+      }
+    }
+    > div:nth-of-type(2) {
+      width: 70%;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      flex-wrap: wrap;
+      > img {
+        width: 20%;
+      }
+    }
+  }
+  > div.follow {
+    display: flex;
+    flex-direction: column;
+    > div:nth-of-type(1) {
+      display: flex;
+      justify-content: center;
+      > p {
+        font-family: oriSans;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    > div:nth-of-type(2) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      width: 20%;
+      > a {
+        > img {
+          margin: 3px;
+          width: 30.5px;
+          height: 30.5px;
+        }
+      }
+    }
+  }
+  > div.subscribe {
+    height: 46px;
+    width: 100%;
+    background-color: rgb(0, 118, 129);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    > img {
+      height: 50%;
+    }
+    > a {
+      font-family: oriSans;
+      font-weight: bold;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+  }
+  > div.footerFirst {
+    height: 311px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      margin: 10px;
+      margin-top: 20px;
+      > a {
+        text-decoration: none;
+        line-height: 37px;
+        font-size: medium;
+        font-weight: lighter;
+        color: rgba(28, 27, 27, 0.819);
+      }
+      > a:nth-of-type(1) {
+        font-weight: bold;
+        font-size: large;
+        color: black;
+      }
+    }
+    > div:nth-last-of-type(1) {
+      align-items: center;
+      > div {
+        display: flex;
+        flex-direction: row;
+        > img {
+          height: 37px;
+          width: 37px;
+        }
+      }
+    }
+  }
+  > div.footerSecond {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    > div {
+      > p {
+        width: 50%;
+        text-align: center;
+        font-weight: lighter;
+        font-size: small;
+        color: rgba(58, 58, 58, 0.816);
+        font-family: oriSans;
+        margin: auto;
+        margin-bottom: 40px;
+      }
+    }
+    > div:nth-of-type(2) {
+      > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        a {
+          margin: 10px;
+          font-weight: lighter;
+          color: black;
+        }
+      }
+    }
+  }
+}

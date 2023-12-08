@@ -1,0 +1,13 @@
+@import url(./setting/setting.css);
+@import url(./xxl/xxl.css) screen and (min-width: 1400px);
+@import url(./xl/xl.css) screen and (min-width: 1200px) and (max-width: 1400px);
+@import url(./lg/lg.css) screen and (min-width: 992px) and (max-width: 1200px);
+@import url(./md/md.css) screen and (min-width: 768px) and (max-width: 992px);
+@import url(./sm/sm.css) screen and (min-width: 576px) and (max-width: 768px);
+@import url(./xs/xs.css) screen and (min-width: 0px) and (max-width: 576px);
+/*reponsive xxl and xl lg dn*/
+/*remained: md sm xs*/
+/*remained: menu*/
+/*note:
+oriflame is pretty awkward the header is totally different in 1200-1100 from 1100-992
+therefore i just set the header setting from 1200-1100 and will change the header in md size */

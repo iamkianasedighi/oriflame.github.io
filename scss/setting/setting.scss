@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: oriSans;
+  src: url("../font/OriflameSans20-Regular.eot");
+  src: url("../font/OriflameSans20-Regular.ttf");
+  src: url("../font/OriflameSans20-Regular.woff");
+  src: url("../font/OriflameSans20-Regular.woff2");
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(80, 79, 79);
+  border-radius: 10px;
+  &:hover {
+    background: rgb(41, 40, 40);
+  }
+}

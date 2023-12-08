@@ -1,0 +1,19 @@
+div.discover{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    >video{
+        padding-bottom: 10px;
+        margin: auto;
+        width: 60%;
+    }
+    >button{
+                border: 1px solid black;
+                width: 20%;
+                border-radius: 50px;
+                margin: auto;
+                &:hover{
+                    background-color: lightgray;
+                }
+}
+}

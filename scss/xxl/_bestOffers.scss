@@ -1,0 +1,106 @@
+div.bestOffer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  > div.titlebest {
+    font-family: oriSans;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    > button.offerbtn {
+      border-radius: 50px;
+      padding: 10px;
+    }
+    > span {
+      font-size: 40px;
+      font-weight: bold;
+      margin: auto;
+    }
+  }
+  > div.selloffer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    > div.offerlarge {
+    position: relative;
+        top: -60px;
+
+      > span:nth-of-type(1) {
+        font-size: larger;
+        color: white;
+        font-weight: bolder;
+        position: absolute;
+        bottom: 80px;
+        left: 87px;
+      }
+      > span:nth-of-type(2) {
+        font-size: larger;
+        color: white;
+        font-weight: bolder;
+        position: absolute;
+        bottom: 50px;
+        left: 95px;
+      }
+      > img {
+        border-radius: 5px;
+        position: relative;
+      }
+      > button.bestshopnow {
+        border-radius: 50px;
+        position: absolute;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: whitesmoke;
+        bottom: 10px;
+        left: 80px;
+      }
+    }
+    > div.itemsoffer {
+      display: flex;
+      flex-direction: row;
+        justify-content: space-evenly;
+      > div {
+        position: relative;
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        > img {
+          border-radius: 3px;
+          width: 100%;
+          background-color: grey;
+        }
+        > span.bagoffer {
+          padding-top: 12px;
+          background-color: white;
+          border-radius: 100%;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          position: absolute;
+          right: 0;
+          bottom: 250px;
+        }
+        > div.pricenew {
+          display: flex;
+          flex-direction: row;
+          padding: 5px;
+        }
+      }
+    }
+  }
+  >div.backgroundCircleOffer{
+    background-color: rgb(178, 175, 239);
+    width: calc(100vw/3.5);
+    height: calc(100vw/3.5);
+    border-radius: 50%;
+    opacity: 0.2;
+    position: absolute;
+    right: -60px;
+    bottom: 150px;
+    z-index: -1;
+  }
+}
